@@ -1,0 +1,274 @@
+user1@ENVYme MINGW64 ~ 
+$ cd D:			// vleguvame vo D
+
+user1@ENVYme MINGW64 /d
+$ cd Uni 			// vleguvame vo Uni
+
+user1@ENVYme MINGW64 /d/Uni
+$ cd SI			// vleguvame vo SI
+
+user1@ENVYme MINGW64 /d/Uni/SI
+$ cd Labs				// vleguvame vo Labs
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs
+$ cd Lab1			// vleguvame vo Lab1
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1
+$ touch 226041.txt			// pravime 226041.txt file
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1
+$ mkdir SI_2024_lab1_226041			// pravime SI_2024_lab1_226041 direktorium (repo)
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1
+$ cd SI_2024_lab1_226041			// vleguvame vo pravime SI_2024_lab1_226041
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041
+$ git init			// se inicijalizira repo
+Initialized empty Git repository in D:/Uni/SI/Labs/Lab1/SI_2024_lab1_226041/.git/
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git remote add origin https://github.com/boryanapa/SI_2024_lab1_226041.git			// se linknuva remote repo so lokalno repo
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ nano README.md			// pravime README.md i go editirame
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git add README.md			// izleguvaat na scena promenite vo README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git commit -m "Initial commit"			// pravime commit na promenite so poraka
+[master (root-commit) fdf0e71] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ curl -O https://raw.githubusercontent.com/stefanandonov/SI_2024/master/SILab1Main.java		// se simnuva od linkot (raw)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   363  100   363    0     0   1032      0 --:--:-- --:--:-- --:--:--  1049
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ curl -O https://raw.githubusercontent.com/stefanandonov/SI_2024/master/SILab1_1.java		// se simnuva od linkot (raw)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   361  100   361    0     0   1369      0 --:--:-- --:--:-- --:--:--  1426
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ curl -O https://raw.githubusercontent.com/stefanandonov/SI_2024/master/SILab1_2.java		// se simnuva od linkot (raw)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   346  100   346    0     0   1532      0 --:--:-- --:--:-- --:--:--  1572
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git add .			// izleguvaat na scena site promeni
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git commit -m "Add starter code"			// pravime commit so poraka
+[master 0cdc8b3] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git push -u origin master			// gi sinhronizirame so remote repo
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.12 KiB | 382.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/boryanapa/SI_2024_lab1_226041.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git checkout -b bug1			// pravime nova granka i odime na nea
+Switched to a new branch 'bug1'
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug1)
+$ git checkout master			// se vrakjame nazad na master grankata
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git checkout -b bug2			// kreirame nova granka i odime na nea
+Switched to a new branch 'bug2'
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git checkout bug1			// odime na grankata bug1
+Switched to branch 'bug1'
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug1)
+$ git add SILab1_1.java			// napraveni se promeni i gi stavame na scena
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug1)
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"			// pravime commit vo bug1 so poraka
+[bug1 4b2c6c0] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug1)
+$ git checkout bug2			// odime na grankata bug2
+Switched to branch 'bug2'
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git add SILab1_2.java			// napraveni se promeni i gi stavame na scena
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git commit -m " Fix wrong condition in makeBigStringFrom"			// pravime commit vo bug2 so poraka
+[bug2 b7e5db5]  Fix wrong condition in makeBigStringFrom
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git checkout bug1			// odime na bug1
+Switched to branch 'bug1'
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug1)
+$ git add SILab1Main.java			// napraveni se promeni i gi stavame na scena
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug1)
+$ git commit -m "Call method filterOddLengthStrings in main class" 			// pravime commit vo bug1 so poraka
+[bug1 3b28bb3] Call method filterOddLengthStrings in main class
+ 1 file changed, 1 insertion(+)
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug1)
+$ git checkout bug2			// odime na bug2 grankata
+Switched to branch 'bug2'
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git add SILab1Main.java 			// napraveni se promeni i gi stavame na scena
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git commit -m "Call method makeBigStringFrom in main class"			// pravime commit vo bug2 so poraka
+[bug2 3db611d] Call method makeBigStringFrom in main class
+ 1 file changed, 1 insertion(+)
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git push origin --all			// gi sinhronizirame site granki na lokalnoto repo so remote repo
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.24 KiB | 316.00 KiB/s, done.
+Total 12 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), completed with 4 local objects.
+To https://github.com/boryanapa/SI_2024_lab1_226041.git
+ * [new branch]      bug1 -> bug1
+ * [new branch]      bug2 -> bug2
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git checkout master			// odime na granka master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git merge bug1			// gi spojuvame bug1 grankata so master
+Updating 0cdc8b3..3b28bb3
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git push origin --all			// gi sinhronizirame 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/boryanapa/SI_2024_lab1_226041.git
+   09fbc04..b2e3341  master -> master
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git checkout bug2			// odime na granka bug2
+Switched to branch 'bug2
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git rebase master			// integriranje na master so bug2
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 3db611d... Call method makeBigStringFrom in main class
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 3db611d... Call method makeBigStringFrom in main class
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2|REBASE 2/2)
+$ nano SILab1Main.java			// racna promena na problemite
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2|REBASE 2/2)
+$ git add SILab1Main.java			// gi stavame promenite na scena
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2|REBASE 2/2)
+$ git rebase --continue			// go prodolzuvame integriranjeto
+[detached HEAD 9bb489d] Call method makeBigStringFrom in main class- fixre
+ 1 file changed, 2 insertions(+)
+Successfully rebased and updated refs/heads/bug2.
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (bug2)
+$ git checkout master			//odime na granka master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git merge bug2			// gi spojuvame bug2 i master
+Updating b2e3341..61579c9
+Fast-forward
+ SILab1Main.java | 4 ++++
+ SILab1_2.java   | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git push origin --all			// gi sinhronizirame site granki od local repo so remote repo i se javuva greska 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 700 bytes | 700.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/boryanapa/SI_2024_lab1_226041.git
+   3b28bb3..9bb489d  master -> master
+ ! [rejected]        bug2 -> bug2 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/boryanapa/SI_2024_lab1_226041.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git push --force origin --all			// gi sinhronizirame sosila
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/boryanapa/SI_2024_lab1_226041.git
+ + 3db611d...9bb489d bug2 -> bug2 (forced update)
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ touch logs.txt			// kreirame file logs.txt
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ git log > logs.txt			// go stavame izlezot od git logs vo logs.txt
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ cd /d/Uni/SI/Labs/Lab1			// odime po taa pateka
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1
+$ ls			// listame sto ima vnatre
+226041.txt  SI_2024_lab1_226041/
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1
+$ mv 226041.txt SI_2024_lab1_226041			// go premestuvame
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1
+$ cd SI_2024_lab1_226041			// vleguvame vo repo
+
+user1@ENVYme MINGW64 /d/Uni/SI/Labs/Lab1/SI_2024_lab1_226041 (master)
+$ ls			// se osigurame deka e tamu
+226041.txt  README.md  SILab1Main.java  SILab1_1.java  SILab1_2.java  logs.txt
+
+
+
